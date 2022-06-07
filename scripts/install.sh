@@ -64,6 +64,7 @@ get_binaries() {
   case "$PLATFORM" in
     darwin/386) BINARIES="helm-schema-gen" ;;
     darwin/amd64) BINARIES="helm-schema-gen" ;;
+    darwin/arm64) BINARIES="helm-schema-gen" ;;
     linux/386) BINARIES="helm-schema-gen" ;;
     linux/amd64) BINARIES="helm-schema-gen" ;;
     windows/386) BINARIES="helm-schema-gen" ;;
@@ -350,7 +351,7 @@ End of functions from https://github.com/client9/shlib
 EOF
 
 PROJECT_NAME="helm-schema-gen"
-OWNER=mihasee
+OWNER=mihaisee
 REPO="helm-schema-gen"
 BINARY=helm-schema-gen
 FORMAT=tar.gz
